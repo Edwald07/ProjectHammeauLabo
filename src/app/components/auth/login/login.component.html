@@ -1,0 +1,24 @@
+<form [formGroup]="fg" (ngSubmit)="login()">
+
+    <input
+      class="form-control-sm"
+      type="email"
+      placeholder="Votre adresse email"
+      formControlName="email"
+      name=""
+      id=""
+    />
+      <p-password 
+      formControlName="password" 
+      [feedback]="false" 
+      [toggleMask]="true" 
+      type="password"
+      class="form-control-sm" 
+      placeholder="Votre mot de passe"
+      name=""
+      id=""  
+      />
+
+</form>
+
+<button (click)="login()">Connexion</button>

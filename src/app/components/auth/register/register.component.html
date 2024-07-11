@@ -1,0 +1,24 @@
+<form [formGroup]="fg" (ngSubmit)="confirmform()">
+    <ul>
+      <li>
+        <input class="form-control-sm" type="text" placeholder="nom" formControlName="name">
+      </li>
+      <li>
+        <input class="form-control-sm" type="text" placeholder="prénom" formControlName="firstname">
+      </li>
+      <li>
+        <input class="form-control-sm" type="email" placeholder="email" formControlName="email">
+      </li>
+      <li>
+        <p-password formControlName="password" [feedback]="false" [toggleMask]="true" type="password" class="form-control-sm" placeholder="Votre mot de passe"></p-password>
+      </li>
+      <li>
+        <p-password formControlName="passwordConfirm" [feedback]="false" [toggleMask]="true" type="password" class="form-control-sm" placeholder="confirmez votre mot de passe"></p-password>
+      </li>
+      <li>
+        <input class="form-control-sm" type="text" placeholder="pseudo" formControlName="pseudo">
+      </li>
+    </ul>
+    <button type="submit">Confirmer</button>
+  </form>
+  

@@ -1,0 +1,19 @@
+.outlet{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+body {
+    background: rgb(34,31,78);
+    background: linear-gradient(124deg, rgba(34,31,78,1) 15%, rgba(37,57,129,1) 63%, rgba(22,91,167,1) 92%);
+  }
+  .card-title{
+    text-align:  center;
+  }
+  .card-text{
+    text-align: left;
+    
+  }
